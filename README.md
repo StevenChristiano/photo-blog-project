@@ -1,1 +1,17 @@
 # photo-blog-project
+Hi Hello Everyone! Thanks for coming and review my Photo Blog project
+
+This project is using:
+- HTML
+- CSS
+- Bootstrap
+- 
+I'm still learning, and this project is actually just me sharpening my skill in using HTML and CSS
+also start learning how to apply bootstrap inside it
+
+Photo Blog Project is a Website to collect and show your photo. The first page is showing 
+picture that you want to display. Then when you click it, It will direct you to a page where
+you can get a brief information about the picture you just clicked on. That's it. 
+
+Once Again, Thank You for coming. Hope you can get inspiration from my project or intrigued to see 
+my other project.
