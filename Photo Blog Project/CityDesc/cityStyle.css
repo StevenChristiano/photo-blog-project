@@ -1,0 +1,87 @@
+html, body {
+  min-height: 100%;
+  margin: 0; 
+  background: linear-gradient(to bottom, 
+   rgb(25, 25, 25),  rgb(5, 8, 36)
+  );
+}
+nav {
+  border-bottom: 4px solid rgb(175, 175, 175);
+  padding: 1.5em 0;
+  padding-left: 5%;
+  transition: text-shadow 1s;
+  background: linear-gradient(to right, rgb(159, 158, 158), white);
+}
+
+nav:hover {
+  text-shadow: 0 0 10px black;
+}
+
+nav a {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 600;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+
+nav a div img {
+  width: 5%;
+  margin: 0;
+  box-shadow: none;
+}
+
+#big-title {
+  color: white;
+  padding-top: 20px;
+  font-size: 4em;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+}
+
+.box {
+  display:flex;
+  justify-content: space-around;
+}
+
+
+img {
+  width: 30%;
+  height: 20%;
+  box-shadow: 0px 0px 15px rgba(91, 99, 251, 0.435);
+  border-radius: 20px;
+  margin: 1em 4em;
+
+}
+
+.desc a {
+  padding-left: 20%;
+  margin-right: 5em;cursor: pointer; /* Change cursor to pointer */
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+  border-radius: 10px;
+}
+
+.desc a:hover {
+  transform: scale(1.1); /* Scale up */
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow */
+  border-radius: 10px;
+}
+
+.desc {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+
+.short-desc {
+  background-color: rgba(93, 90, 177, 0.2);
+  padding: 2em 1em 10em 2em;
+  margin: 1em 5em 17px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(91, 99, 251, 0.435);
+}

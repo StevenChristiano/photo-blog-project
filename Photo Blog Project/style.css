@@ -1,0 +1,97 @@
+body {
+  height: 100%; 
+  margin: 0; 
+  background: linear-gradient(to top right, 
+   rgb(25, 25, 25),  rgb(5, 8, 36)
+  );
+}
+* {
+  z-index: 0;
+}
+nav {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding: 1em 0;
+  text-transform: uppercase;
+  padding-left: 5%;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+  color:black;
+  border-bottom: 4px solid rgb(175, 175, 175);
+  transition: text-shadow 2s;
+  background: linear-gradient(to right, rgb(159, 158, 158), white);
+}
+
+nav:hover {
+  text-shadow: 0 0 10px black;
+}
+
+nav img {
+  width: 5%;
+}
+
+.title-container {
+  margin: 3em 0;
+}
+#jangan-gerak {
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  -webkit-animation-name: wiggle;
+  -ms-animation-name: wiggle;
+  -ms-animation-duration: 2000ms;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+@-webkit-keyframes wiggle {
+  0% {-webkit-transform: rotate(2deg);}
+  25% {-webkit-transform: rotate(-2deg);}
+  50% {-webkit-transform: rotate(5deg);}
+  75% {-webkit-transform: rotate(-1deg);}
+  100% {-webkit-transform: rotate(2deg);}
+}
+
+@-ms-keyframes wiggle {
+  0% {-ms-transform: rotate(0.5deg);}
+  25% {-ms-transform: rotate(-0.5deg);}
+  50% {-ms-transform: rotate(0.375deg);}
+  75% {-ms-transform: rotate(-0.5deg);}
+  100% {-ms-transform: rotate(0.5deg);}
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(2deg);}
+  25% {transform: rotate(-2deg);}
+  50% {transform: rotate(5deg);}
+  75% {transform: rotate(-1deg);}
+  100% {transform: rotate(2deg);}
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+
+
+.item img{
+  width: 80%;
+  margin: calc(10%/2) calc(10%);
+  border-radius: 20px;
+  justify-self: stretch;
+  box-shadow: 0 0 15px rgba(93, 90, 177, 0.2);
+  transition: transform 2s, box-shadow 2s;
+}
+
+.item img:hover{
+  transform: rotate(5deg);
+  box-shadow: 0 0 15px white;
+}
